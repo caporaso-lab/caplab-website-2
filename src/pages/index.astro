@@ -2,15 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+import FeatureItem from '~/components/widgets/FeatureItem.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -49,33 +44,27 @@ const metadata = {
     id="features"
     title="Highlights"
     subtitle="We are a bioinformatics software engineering lab with a track record..."
-    items={[
-      {
-        title: 'The QIIME2 Software Project',
-        description:
-          'A open-source software platform for microbioime analysis with integrated provenance tracking and a variety of interfaces.',
-        icon: 'tabler:tournament',
-      },
-      {
-        title: 'Diverse Research Experience',
-        description:
-          'Groundbreaking publications across the fields of cancer prevention & treatment, environmental sustainability, and scientific computing.',
-        icon: 'tabler:microscope',
-      },
-      {
-        title: 'Bioinformatics Education',
-        description:
-          'We are passionate about educating a diverse range of people in computational biology by maintaining a community forum and hosting workshops around the world.',
-        icon: 'tabler:dna-2',
-      },
-      {
-        title: 'Data Analysis Workflow Expertise',
-        description:
-          'By developing pipelines for tutorials used by students and experts alike and designing parallel software to make optimal use of supercomputers, we know what it takes to perform serious scientific computing.',
-        icon: 'tabler:chart-histogram',
-      },
-    ]}
-  />
+  >
+    <FeatureItem title="The QIIME2 Software Project" icon="tabler:tournament">
+      A open-source software platform for microbioime analysis with integrated provenance tracking and a variety of
+      interfaces
+    </FeatureItem>
+
+    <FeatureItem title="Diverse Research Experience" icon="tabler:microscope">
+      Groundbreaking publications across the fields of cancer prevention & treatment, environmental sustainability, and
+      scientific computing.
+    </FeatureItem>
+
+    <FeatureItem title="Bioinformatics Education" icon="tabler:dna-2">
+      We are passionate about educating a diverse range of people in computational biology by maintaining a community
+      forum and hosting workshops around the world.
+    </FeatureItem>
+
+    <FeatureItem title="Biological Data Analysis Expertise" icon="tabler:chart-histogram">
+      By developing pipelines for tutorials used by students and experts alike and designing parallel software to make
+      optimal use of supercomputers, we know what it takes to perform serious scientific computing.
+    </FeatureItem>
+  </Features>
 
   <Features2
     title="Connect With Us"
