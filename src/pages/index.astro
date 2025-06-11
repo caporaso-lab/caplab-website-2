@@ -7,6 +7,10 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Stats from '~/components/widgets/Stats.astro';
 
+import youtubeIcon from '~/assets/images/youtube-icon.png';
+import githubIcon from '~/assets/images/github-icon.png';
+import q2Icon from '~/assets/images/q2-icon.png';
+
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
   ignoreTitleTemplate: true,
@@ -23,7 +27,7 @@ const metadata = {
       },
       { text: 'Contract Work', href: '/contract-work' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/cap-website.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">The Caporaso Lab</Fragment>
 
@@ -71,26 +75,21 @@ const metadata = {
     subtitle="We're excited to engage with you!"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'YouTube',
+        description: "Our archive for comprehensive data science workshops, and indepth tutorials.",
+        image : youtubeIcon,
       },
       {
-        title: 'Heros',
+        title: 'GitHub',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          "We are open source software developers. Find us on github and check out our work.",
+        image : githubIcon,
       },
       {
-        title: 'Features',
+        title: 'QIIME2 Forum',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'TODO',
-        description: 'Hannah says we need more social media accounts...',
-        icon: 'flat-color-icons:document',
+          'This platform serves as a free resource for discussions, troubleshooting, and collaboration. Users are encouraged to engage and share their insights',
+        image : q2Icon,
       },
     ]}
   >
