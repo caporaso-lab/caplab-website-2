@@ -1,0 +1,83 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Contact'
+---
+
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+<HeroText tagline="Contact" title="Let's Connect!" />
+
+<div class="text-center mb-2">
+    <h1 class="prose mx-auto text-xl font-bold">QIIME2 Support</h1>
+</div>
+<div class="prose mx-auto mb-2">
+    If you’re looking for help with QIIME 2, please visit the [QIIME 2 Forum](https://forum.qiime2.org). Start by searching to see if your question has already been answered, and if not feel free to create a new post. It’s free!
+</div>
+<div class="prose mx-auto mb-6">
+    Requesting help on the QIIME 2 Forum is generally quicker than contacting the developers directly. We sometimes lose track of our email, but multiple moderators are always tracking posts on the Forum.
+</div>
+
+<div class="text-center mb-2">
+    <h1 class="prose mx-auto text-xl font-bold">Finding the Caporaso Lab</h1>
+</div>
+<div class="prose mx-auto mb-6">
+    The Caporaso Lab is located in Suite 220 of the Applied Research and Development (ARD) building at Northern Arizona University (see map below). You will need to make arrangements with Dr. Caporaso for access to the building. Dr. Caporaso’s office is located in Room 225 of ARD, which is at the northwest corner of Suite 220.
+</div>
+TODO: map
+
+<div class="text-center mb-2">
+    <h1 class="prose mx-auto text-xl font-bold">FedEx and UPS</h1>
+</div>
+<div class="prose mx-auto mb-6 text-center">
+    J. Gregory Caporaso, Ph.D. \
+    Northern Arizona University \
+    1395 S Knoles Drive \
+    ARD Bldg 56, Ste 210 \
+    Flagstaff, AZ 86011, USA.
+</div>
+
+<div class="text-center mb-2">
+    <h1 class="prose mx-auto text-xl font-bold">USPS</h1>
+</div>
+<div class="prose mx-auto mb-2 text-center">
+    J. Gregory Caporaso, Ph.D. \
+    PO Box 4073 \
+    Flagstaff, AZ 86011-4073, USA.
+</div>
+
+<Features2
+title="We are here to help!"
+items={[
+    {
+    title: 'General support',
+    description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+    },
+    {
+    title: 'Contact sales',
+    description:
+        'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+    },
+    {
+    title: 'Technical support',
+    description:
+        'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+    },
+    {
+    title: 'Phone',
+    description: '+1 (234) 567-890',
+    icon: 'tabler:headset',
+    },
+    {
+    title: 'Email',
+    description: 'contact@support.com',
+    icon: 'tabler:mail',
+    },
+    {
+    title: 'Location',
+    description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+    icon: 'tabler:map-pin',
+    },
+]}
+/>

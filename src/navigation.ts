@@ -8,7 +8,7 @@ export const headerData = {
     },
     {
       text: 'Contact',
-      herf: getPermalink('/contact'),
+      href: getPermalink('/contact'),
     },
     {
       text: 'Jobs',

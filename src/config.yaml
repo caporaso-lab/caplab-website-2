@@ -1,6 +1,6 @@
 site:
   name: Caporaso Lab
-  site: 'https://'
+  site: 'https://www.qiime2.org'
   base: '/'
   trailingSlash: false
 
@@ -11,7 +11,7 @@ metadata:
   title:
     default: Caporaso Lab
     template: '%s — Caporaso Lab'
-  description: "\U0001F680 Research Team at Northern Arizona University"
+  description: "\U0001F680 Research Lab at Northern Arizona University"
   robots:
     index: true
     follow: true
