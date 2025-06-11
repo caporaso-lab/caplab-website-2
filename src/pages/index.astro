@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import FeatureItem from '~/components/widgets/FeatureItem.astro';
+import BoxFeatureItem from '~/components/widgets/BoxFeatureItem.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -44,6 +45,8 @@ const metadata = {
     ]}
   />
 
+  Fea
+
   <Features
     id="features"
     title="Highlights"
@@ -70,31 +73,16 @@ const metadata = {
     </FeatureItem>
   </Features>
 
-  <Features2
-    title="Connect With Us"
-    subtitle="We're excited to engage with you!"
-    items={[
-      {
-        title: 'YouTube',
-        description: "Our archive for comprehensive data science workshops, and indepth tutorials.",
-        image : youtubeIcon,
-      },
-      {
-        title: 'GitHub',
-        description:
-          "We are open source software developers. Find us on github and check out our work.",
-        image : githubIcon,
-      },
-      {
-        title: 'QIIME2 Forum',
-        description:
-          'This platform serves as a free resource for discussions, troubleshooting, and collaboration. Users are encouraged to engage and share their insights',
-        image : q2Icon,
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+  <Features2 title="Connect With Us" subtitle="We're excited to engage with you!" columns={2}>
+    <BoxFeatureItem title="YouTube" image={youtubeIcon.src}>
+      Our archive for comprehensive data science workshops, indepth tutorials, and complete courses.
+    </BoxFeatureItem>
+    <BoxFeatureItem title="GitHub" image={githubIcon.src}>
+      We are open source software developers. Find us on github and check out our work.
+    </BoxFeatureItem>
+    <BoxFeatureItem title="QIIME2 Forum" image={q2Icon.src}>
+      This platform serves as a free resource for discussions, troubleshooting, and collaboration. Users are encouraged
+      to engage and share their insights.
+    </BoxFeatureItem>
   </Features2>
 </Layout>
