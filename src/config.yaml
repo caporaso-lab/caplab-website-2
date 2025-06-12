@@ -1,5 +1,5 @@
 site:
-  name: Caporaso Lab
+  name: The Caporaso Lab
   site: 'https://www.qiime2.org'
   base: '/'
   trailingSlash: false
