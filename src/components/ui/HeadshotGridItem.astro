@@ -1,0 +1,27 @@
+---
+import { twMerge } from 'tailwind-merge';
+
+let {
+  title = '',
+
+  panelClass,
+  titleClass,
+  descriptionClass,
+  containerClass,
+  image = null,
+} = Astro.props;
+---
+
+<div class={twMerge('pt-8', containerClass)}>
+  <div class={twMerge('flex flex-col', panelClass)}>
+    <div class="flex justify-center">
+      {image && <img src={image} class="w-48 h-48 rounded-md mb-1" />}
+    </div>
+    <div class="m-0">
+      {title && <h3 class={twMerge('text-xl font-bold mt-2 text-center', titleClass)}>{title}</h3>}
+      <div class={twMerge('text-center mb-6', descriptionClass)}>
+        <slot />
+      </div>
+    </div>
+  </div>
+</div>
