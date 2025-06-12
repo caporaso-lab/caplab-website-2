@@ -1,0 +1,23 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Publications'
+---
+
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+<HeroText tagline="Publications" title="We are proud of our previous work, check it out!" />
+
+ <Stats
+    stats={[
+      { title: 'Publications', amount: '250+' },
+      { title: 'Citations', amount: '150K+' },
+      { title: 'Collaborator Institutions', amount: '190+' },
+      { title: 'Open Access', amount: '80.3%' }]}
+  />
+
+<div class="text-center mb-2">
+    <h1 class="prose mx-auto text-xl font-bold"> Published works can be found on [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term="Caporaso+JG"%5BAuthor%5D&filter=years.2006-2007&sort=date) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=8wv9sLkAAAAJ)</h1>
+</div>
