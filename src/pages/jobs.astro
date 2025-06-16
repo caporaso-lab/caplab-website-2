@@ -1,0 +1,29 @@
+---
+import Features from '~/components/widgets/Features.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Jobs',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Jobs at the Caporaso Lab"
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      Elevate your career by joining <br />
+      <span class="text-accent dark:text-white"> Our Team</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      The Caporaso Lab is often hiring, position types include research software engineers, post-doctoral scholars, graduate research assistants, writers, project managers, and administrative assistants.
+    </Fragment>
+  </Hero>
