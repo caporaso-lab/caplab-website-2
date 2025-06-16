@@ -1,21 +1,17 @@
 ---
-import GridItem from "../ui/GridItem.astro";
+import GridItem from '../ui/GridItem.astro';
 
-let {
-    title = '',
-    icon = '',
-} = Astro.props;
+let { title = '', icon = '' } = Astro.props;
 ---
 
-
 <GridItem
-    {title}
-    {icon}
-    containerClass=''
-    panelClass='max-w-none'
-    titleClass='md:text-[1.3rem]'
-    descriptionClass='prose prose-sm pt-3 text-muted dark:prose-string:text-white'
-    iconClass='text-white bg-secondary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0',
+  {title}
+  {icon}
+  containerClass=""
+  panelClass="max-w-none"
+  titleClass="md:text-[1.3rem]"
+  descriptionClass="prose prose-sm pt-3 text-muted dark:prose-string:text-white"
+  iconClass="text-white bg-secondary rounded-2xl w-10 h-10 md:w-11 md:h-11 p-2 md:p-2"
 >
-    <slot />
+  <slot />
 </GridItem>
