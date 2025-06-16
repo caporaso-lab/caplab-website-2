@@ -2,7 +2,7 @@
 import Features from '~/components/widgets/Features.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
-
+import Content from '~/components/widgets/Content.astro';
 const metadata = {
   title: 'Jobs',
 };
@@ -27,3 +27,33 @@ const metadata = {
       The Caporaso Lab is often hiring, position types include research software engineers, post-doctoral scholars, graduate research assistants, writers, project managers, and administrative assistants.
     </Fragment>
   </Hero>
+
+    <Content
+    isAfterContent={true}
+    items={[
+      {
+        title: 'q2-jobs:',
+        description: `The QIIME 2 Forum Job Board. You can find microbiome, bioinformatics, and QIIME 2 employment opportunities on q2-jobs, the QIIME 2 Forum’s Job Board. Feel free to post your own job announcements - it’s free. We just ask that posts are restricted to jobs relevant to the QIIME 2 user and developer community.`,
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Undergraduate Jobs:',
+        description: `Undergraduates interested in positions should review our undergraduate job information below.`,
+        icon: 'tabler:carousel-horizontal'
+    },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
+      alt: 'SaaS Businesses Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Looking for a Job Opening? <br /><span class="text-2xl">Find open positions with our lab and our collaborators:</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
