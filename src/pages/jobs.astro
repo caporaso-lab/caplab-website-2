@@ -3,6 +3,7 @@ import Features from '~/components/widgets/Features.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 const metadata = {
   title: 'Jobs',
 };
@@ -50,6 +51,87 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Looking for a Job Opening? <br /><span class="text-2xl">Find open positions with our lab and our collaborators:</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+
+<Features
+  id="features"
+  title="Undergraduate Research Opportunities"
+  subtitle="Cutting-edge science and software development."
+  columns={4}
+>
+  <div>
+    <h3 class="font-bold">Software Engineering</h3>
+    <p>Undergraduate Researchers in the Caporaso Lab develop and support QIIME 2, a leading microbiome bioinformatics platform. Typically students will: contribute to the QIIME 2 ecosystem (Python) design and build interactive data visualizations (JavaScript, various frameworks) develop bioinformatics plugins (Various languages) create and manage product documentation (Jinja2, Sphinx) provide user support (Discourse) explore DevOps and build pipelines (GitHub Actions)</p>
+  </div>
+  <div>
+    <h3 class="font-bold">Microbiome Data Science</h3>
+    <p>As members of the Center for Applied Microbiome Science, undergraduates perform bioinformatics analysis on contemporary studies. These contributions yield published work, experience with research design, and valuable collaborative relationships.</p>
+  </div>
+  <div>
+    <h3 class="font-bold">Publications & Research Travel</h3>
+    <p>In addition to a strong portfolio of GitHub contributions, undergraduate researchers are supported in developing conference posters, presentations, collaborative, and independent research publications. Contributions to lab publications are often welcome, and students co-author publications that they contribute to. Fully-funded opportunities to travel in support of research products are also frequent.</p>
+  </div>
+  <div>
+    <h3 class="font-bold">Flexible Work Schedule</h3>
+    <p>Undergraduates balance diverse responsibilities, and academic performance is top priority. Students are asked to work 10-20 hours per week while school is in session, and may work up to 40 hours during breaks (subject to Northern Arizona University employment policies). Flexible scheduling accommodates coursework and exam requirements.</p>
+  </div>
+</Features>
+
+todo bullet list above
+
+    <Steps2
+    title="Ready to Apply?"
+    subtitle="You are just steps from a new career!"
+    items={[
+      {
+        title: 'Apply to The Pathogen and Microbiome Institute',
+        description:
+          'To work with the Caporaso Lab, students must complete an application to the Pathogen and Microbiome Institute, print it, and hand-deliver to PMI during business hours at: Applied Research & Development (building #56). Please deliver your application to the front desk of the PMI Administrative Suite (ARD Suite 210).'
+              },
+      {
+        title: 'Get in touch',
+        description:
+          'After delivering your application, notify Evan Bolyen by email. This will help us access and review your application in a timely manner.'
+              },
+      {
+        title: 'Save the Date',
+        description:
+          'Applications are reviewed three times annually, as follows: Spring, January 15th; Summer, May 15th; Fall, September 1st'
+      },
+    ]}
+  />
+
+    <Content
+    title="Want to get started TODAY?"
+    subtitle="Contribute Informally!"
+    isReversed
+    items={[
+      {
+        title: 'QIIME 2 on GitHub:',
+        description:
+          'QIIME 2 is free, open, community-driven software. Pull requests are always welcome! If you’re not available for a formal position but would like to contribute, notify the team in a post to our developer discussion, then check out our list of good first issues.'
+      },
+      {
+        title: 'An Introduction to Applied Bioinformatics (IAB)',
+        description: 'free, open source interactive text that introduces readers to core concepts of bioinformatics in the context of their implementation and application. IAB is available as a learning resource, and also welcomes community contributions as GitHub pull requests.'
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
+      alt: 'Startup Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        We are Open Source: <br /><span class="text-2xl"></span>
       </h3>
     </Fragment>
 
