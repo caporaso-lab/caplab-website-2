@@ -19,8 +19,8 @@ export const headerData = {
       href: getPermalink('/publications'),
     },
     {
-      text: 'Contract Work',
-      href: getPermalink('/contract-work'),
+      text: 'Professional Services',
+      href: getPermalink('/professional-services'),
     },
   ],
 };
