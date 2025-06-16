@@ -4,7 +4,7 @@ title: 'Home'
 ---
 import Hero from '~/components/widgets/Hero.astro';
 import FeatureItem from '~/components/widgets/FeatureItem.astro';
-import BoxFeatureItem from '~/components/widgets/BoxFeatureItem.astro';
+import LogoFeatureItem from '~/components/widgets/LogoFeatureItem.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -62,14 +62,14 @@ import q2Icon from '~/assets/images/q2-icon.png';
 </Features>
 
 <Features2 title="Connect With Us" subtitle="We're excited to engage with you!" columns={3}>
-    <BoxFeatureItem title="YouTube" image={youtubeIcon.src} href="https://www.youtube.com/qiime2">
+    <LogoFeatureItem title="YouTube" image={youtubeIcon.src} href="https://www.youtube.com/qiime2">
         Our archive for comprehensive data science workshops, in-depth tutorials, and complete courses.
-    </BoxFeatureItem>
-    <BoxFeatureItem title="GitHub" image={githubIcon.src} href="https://www.github.com/qiime2">
+    </LogoFeatureItem>
+    <LogoFeatureItem title="GitHub" image={githubIcon.src} href="https://www.github.com/qiime2">
         We are open source software developers. Find us on github and check out our work.
-    </BoxFeatureItem>
-    <BoxFeatureItem title="QIIME2 Forum" image={q2Icon.src} href="https://forum.qiime2.org">
+    </LogoFeatureItem>
+    <LogoFeatureItem title="QIIME2 Forum" image={q2Icon.src} href="https://forum.qiime2.org">
         This platform serves as a free resource for discussions, troubleshooting, and collaboration. Users are encouraged
         to engage and share their insights.
-    </BoxFeatureItem>
+    </LogoFeatureItem>
 </Features2>
