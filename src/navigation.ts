@@ -26,16 +26,6 @@ export const headerData = {
 };
 
 export const footerData = {
-  links: [
-    {
-      title: 'Support',
-      links: [{ text: 'Forum', href: '#' }],
-    },
-    {
-      title: 'Miscellaneous',
-      links: [{ text: 'FAQ', href: '/faq' }],
-    },
-  ],
   socialLinks: [
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/qiime2' },
     { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/qiime2' },
