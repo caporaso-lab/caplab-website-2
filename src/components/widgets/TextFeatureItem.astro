@@ -1,7 +1,7 @@
 ---
 import GridItem from '~/components/ui/GridItem.astro';
 
-let { title = '', image = '' } = Astro.props;
+let { title = '' } = Astro.props;
 ---
 
 <GridItem
@@ -11,7 +11,6 @@ let { title = '', image = '' } = Astro.props;
   titleClass="md:text-[1.3rem]"
   descriptionClass="prose prose-sm pt-3 text-muted dark:prose-string:text-white"
   iconClass="text-white bg-secondary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0"
-  image={image}
 >
   <slot />
 </GridItem>
