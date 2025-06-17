@@ -1,7 +1,8 @@
 ---
 import GridItem from '../ui/GridItem.astro';
+import { twMerge } from 'tailwind-merge';
 
-let { title = '', icon = '' } = Astro.props;
+let { title = '', icon = '', descriptionClass = '', iconClass = '' } = Astro.props;
 ---
 
 <GridItem
@@ -10,8 +11,8 @@ let { title = '', icon = '' } = Astro.props;
   containerClass=""
   panelClass="max-w-none"
   titleClass="md:text-[1.3rem]"
-  descriptionClass="prose prose-sm pt-3 text-muted dark:prose-string:text-white"
-  iconClass="text-white bg-secondary rounded-2xl w-10 h-10 md:w-11 md:h-11 p-2 md:p-2"
+  descriptionClass={twMerge('prose prose-lg pt-3 text-muted dark:prose-string:text-white', descriptionClass)}
+  iconClass={twMerge('text-white bg-secondary rounded-2xl w-10 h-10 md:w-11 md:h-11 p-2 md:p-2', iconClass)}
 >
   <slot />
 </GridItem>

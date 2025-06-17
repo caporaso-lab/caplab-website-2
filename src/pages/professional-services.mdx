@@ -1,0 +1,40 @@
+---
+layout: ~/layouts/PageLayout.astro
+title: 'Professional Services'
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import FeatureItem from '~/components/widgets/FeatureItem.astro';
+
+<Hero
+    tagline="Some Tagline"
+    image={{
+        src: '~/assets/images/cap-website.png',
+        alt: 'todo',
+    }}
+>
+    <Fragment slot="title">
+        Professional Services
+    </Fragment>
+
+    <Fragment slot="subtitle">
+        Some subtitle.
+    </Fragment>
+</Hero>
+
+<Features
+    id="features"
+    title="Professional Services Offered"
+    subtitle="Here are some of our strongsuits."
+    columns={3}
+>
+    <FeatureItem title="Software Engineering" icon="tabler:tournament">
+        Some text content.
+    </FeatureItem>
+    <FeatureItem title="Data Analysis" icon="tabler:tournament">
+        Some text content.
+    </FeatureItem>
+    <FeatureItem title="Strongsuit" icon="tabler:tournament">
+        Some text content.
+    </FeatureItem>
+</Features>
