@@ -1,13 +1,15 @@
 # Caporaso Lab website source
 
-Instructions for local development:
+This repository contains the source for the Caporaso Lab website, https://cap-lab.bio.
+
+## Instructions for local development
 
 - if necessary, clone the repo: https://github.com/colinvwood/caplab-website-2
 - if necessary, `npm install`
 - `npm run dev`
 - open the local build using the URL that is provided from the previous step
 
-# 🚀 AstroWind
+# 🚀 AstroWind README
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
      alt="AstroWind Lighthouse Score" width="100" height="358">
