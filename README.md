@@ -1,3 +1,12 @@
+# Caporaso Lab website source
+
+Instructions for local development:
+
+- if necessary, clone the repo: https://github.com/colinvwood/caplab-website-2
+- if necessary, `npm install`
+- `npm run dev`
+- open the local build using the URL that is provided from the previous step
+
 # 🚀 AstroWind
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
