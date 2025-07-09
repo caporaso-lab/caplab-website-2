@@ -4,35 +4,35 @@ title: 'Contact'
 ---
 
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import TextFeatureItem from '~/components/widgets/TextFeatureItem.astro';
 
-<HeroText tagline="Contact" title="Let's Connect!" />
-
 <Features2
-    title="Here are some ways to get in touch."
+    title="Contact"
     columns={3}
 >
-    <TextFeatureItem title="Finding The Caporaso Lab">
-        The Caporaso Lab is located in Suite 220 of the Applied Research and Development (ARD) building at Northern Arizona University. You will need to make arrangements with Dr. Caporaso for access to the building.
+    <TextFeatureItem title="Visit">
+    The Caporaso Lab is located in Suite 220 of the Applied Research and Development (ARD) building at Northern Arizona University.
+    ARD is a controlled access building, so you'll need to make arrangements with a member of the team to visit.
     </TextFeatureItem>
-    <TextFeatureItem title="QIIME2 Support">
-        If you’re looking for help with QIIME 2, please visit the [QIIME 2 Forum](https://forum.qiime2.org). Start by searching to see if your question has already been answered, and if not feel free to create a new post. It’s free!
+    <TextFeatureItem title="Get technical support">
+    If you're looking for help with our software, please visit the [QIIME 2 Forum](https://forum.qiime2.org). It's free!
+    Requesting help on the QIIME 2 Forum is quicker than contacting the developers directly.
     </TextFeatureItem>
-    <TextFeatureItem title="Email">
-        greg.caporaso@nau.edu
+    <TextFeatureItem title="Send an email">
+        cap-lab@nau.edu
     </TextFeatureItem>
-    <TextFeatureItem title="FedEx and UPS">
+    <TextFeatureItem title="Snail mail: FedEx and UPS">
         J. Gregory Caporaso, Ph.D. \
         Northern Arizona University \
         1395 S Knoles Drive \
         ARD Bldg 56, Ste 210 \
         Flagstaff, AZ 86011, USA.
     </TextFeatureItem>
-    <TextFeatureItem title="FedEx and UPS">
+    <TextFeatureItem title="Snail mail: USPS">
         J. Gregory Caporaso, Ph.D. \
-        PO Text 4073 \
+        PO Box 4073 \
         Flagstaff, AZ 86011-4073, USA.
     </TextFeatureItem>
 </Features2>
