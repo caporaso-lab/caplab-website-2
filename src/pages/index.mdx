@@ -12,6 +12,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import youtubeIcon from '~/assets/images/youtube-icon.png';
 import githubIcon from '~/assets/images/github-icon.png';
 import q2Icon from '~/assets/images/q2-icon.png';
+import booksIcon from '~/assets/images/book-emoji.png';
 
 <Hero
     actions={[
@@ -84,8 +85,7 @@ import q2Icon from '~/assets/images/q2-icon.png';
     The QIIME 2 Forum is a free technical support and discussion site, and houses nearly 10 years of discussion about QIIME 2 and microbiome research methods.
     Get involved to connect with others, share your work, and advance your research.
     </LogoFeatureItem>
-    <LogoFeatureItem title="Free online books">
-    Our team has three books available for learning, oriented toward aspiring bioinformatics methods developers, bioinformatics software developers, and users of bioinformatics tools.
-    These are [*An Introduction to Applied Bioinformatics*](https://readIAB.org), [*Developing with QIIME 2*](https://develop.qiime2.org), and [*Using QIIME 2*](https://use.qiime2.org).
+    <LogoFeatureItem title="Free online books" image={booksIcon.src} href="/publications">
+    Our team has published three books available for learning, oriented toward aspiring bioinformatics methods developers, bioinformatics software developers, and users of bioinformatics tools. Click here to learn more!
     </LogoFeatureItem>
 </Features2>
