@@ -11,7 +11,9 @@ import Stats from '~/components/widgets/Stats.astro';
 
 import youtubeIcon from '~/assets/images/youtube-icon.png';
 import githubIcon from '~/assets/images/github-icon.png';
+import githubIconDark from '~/assets/images/github-mark-white.png';
 import q2Icon from '~/assets/images/q2-icon.png';
+import q2IconDark from '~/assets/images/q2-icon-all-white.svg';
 import booksIcon from '~/assets/images/book-emoji.png';
 import HeroText from '~/components/widgets/HeroText.astro';
 
@@ -20,7 +22,7 @@ import HeroText from '~/components/widgets/HeroText.astro';
         { variant: 'primary', text: 'Team', href: '/team' },
         { text: 'Professional Services', href: '/professional-services' },
     ]}
-    image={{ src: '~/assets/images/groupphoto.jpeg', alt: 'Caporaso Lab Group' }}
+    image={{ src: '~/assets/images/group-photo.jpeg', alt: 'Caporaso Lab Group' }}
 >
 <Fragment slot="title">Caporaso Lab</Fragment>
 
@@ -73,21 +75,21 @@ import HeroText from '~/components/widgets/HeroText.astro';
 </Features>
 
 <Features2 title="Free Resources" subtitle="Use our educational and other resources to advance your skills." columns={3}>
-    <LogoFeatureItem title="YouTube" image={youtubeIcon.src} href="https://www.youtube.com/qiime2">
+    <LogoFeatureItem title="YouTube" image={youtubeIcon.src}  darkImage={youtubeIcon.src} href="https://www.youtube.com/qiime2">
     Find QIIME 2 and other data science videos and full courses on our YouTube channel.
     </LogoFeatureItem>
-    <LogoFeatureItem title="GitHub" image={githubIcon.src} href="https://www.github.com/qiime2">
+    <LogoFeatureItem title="GitHub" image={githubIcon.src} darkImage={githubIconDark.src} href="https://www.github.com/qiime2">
     Our software tools are open source and free for all use.
     Find them in the QIIME 2 and Caporaso Lab organizations on GitHub.
     </LogoFeatureItem>
-    <LogoFeatureItem image={q2Icon.src} title="QIIME 2 Library" href="https://library.qiime2.org">
+    <LogoFeatureItem title="QIIME 2 Library" image={q2Icon.src} darkImage={q2IconDark.src} href="https://library.qiime2.org">
     Learn how to install and use our software, and discover plugins and documentation produced by the QIIME 2 community - all on the QIIME 2 Library.
     </LogoFeatureItem>
-    <LogoFeatureItem title="QIIME 2 Forum" image={q2Icon.src} href="https://forum.qiime2.org">
+    <LogoFeatureItem title="QIIME 2 Forum" image={q2Icon.src} darkImage={q2IconDark.src} href="https://forum.qiime2.org">
     The QIIME 2 Forum is a free technical support and discussion site, and houses nearly 10 years of discussion about QIIME 2 and microbiome research methods.
     Get involved to connect with others, share your work, and advance your research.
     </LogoFeatureItem>
-    <LogoFeatureItem title="Free online books" image={booksIcon.src}>
+    <LogoFeatureItem title="Free online books" image={booksIcon.src} darkImage={booksIcon.src}>
     Our team has published three books available for learning, oriented toward aspiring bioinformatics methods developers, bioinformatics software developers, and users of bioinformatics tools. Find them here: <span class="text-blue-800 dark:text-blue-600 font-bold">[An Introduction to Applied Bioinformatics](https://readIAB.org)</span>, <span class="text-blue-800 dark:text-blue-600 font-bold">[Developing with QIIME 2](https://develop.qiime2.org)</span>, and <span class="text-blue-800 dark:text-blue-600 font-bold">[*Using QIIME 2*](https://use.qiime2.org) </span>
     </LogoFeatureItem>
 </Features2>
