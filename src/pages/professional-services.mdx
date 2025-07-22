@@ -6,35 +6,22 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import FeatureItem from '~/components/widgets/FeatureItem.astro';
 
-<Hero
-    tagline="Some Tagline"
-    image={{
-        src: '~/assets/images/cap-website.png',
-        alt: 'todo',
-    }}
->
-    <Fragment slot="title">
-        Professional Services
-    </Fragment>
-
-    <Fragment slot="subtitle">
-        Some subtitle.
-    </Fragment>
-</Hero>
-
 <Features
     id="features"
-    title="Professional Services Offered"
-    subtitle="Here are some of our strongsuits."
+    title="Professional Services"
+    subtitle="The Caporaso Lab can contract with your team to provide a variety of services. You can contact us at <a href='mailto:cap-lab@nau.edu' class='text-blue-800 dark:text-blue-600 font-bold'>cap-lab@nau.edu</a> to discuss."
     columns={3}
 >
-    <FeatureItem title="Software Engineering" icon="tabler:tournament">
-        Some text content.
+    <FeatureItem title="Software Engineering" icon="tabler:chart-dots-3">
+        Ready to transition your in-house analysis scripts to publication-quality bioinformatics tools?
+        Let the research software engineering team who built QIIME 2 get you there.
     </FeatureItem>
-    <FeatureItem title="Data Analysis" icon="tabler:tournament">
-        Some text content.
+    <FeatureItem title="Data Analysis" icon="tabler:file-analytics">
+        Need assistance designing or carrying out a microbiome study?
+        We can help!
+        Reach out to work with one of the data scientists on our team.
     </FeatureItem>
-    <FeatureItem title="Strongsuit" icon="tabler:tournament">
-        Some text content.
+    <FeatureItem title="Educational Workshops" icon="tabler:brain">
+        We can run single or multi-day workshops at your site or ours for bioinformatics developers or users to advance these critical skills for your organization.
     </FeatureItem>
 </Features>

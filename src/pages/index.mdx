@@ -11,65 +11,85 @@ import Stats from '~/components/widgets/Stats.astro';
 
 import youtubeIcon from '~/assets/images/youtube-icon.png';
 import githubIcon from '~/assets/images/github-icon.png';
+import githubIconDark from '~/assets/images/github-mark-white.png';
 import q2Icon from '~/assets/images/q2-icon.png';
+import q2IconDark from '~/assets/images/q2-icon-all-white.svg';
+import booksIcon from '~/assets/images/book-emoji.png';
+import HeroText from '~/components/widgets/HeroText.astro';
 
 <Hero
     actions={[
         { variant: 'primary', text: 'Team', href: '/team' },
         { text: 'Professional Services', href: '/professional-services' },
     ]}
-    image={{ src: '~/assets/images/cap-website.png', alt: 'Cartoon Microbes' }}
+    image={{ src: '~/assets/images/group-photo.jpeg', alt: 'Caporaso Lab Group' }}
 >
-<Fragment slot="title">The Caporaso Lab</Fragment>
+<Fragment slot="title">Caporaso Lab</Fragment>
 
 <Fragment slot="subtitle">
-    <span class="font-semibold"> Developing production-quality software tools to study the microbial world. </span>
+    <span class="font-semibold"> Designing, building, distributing, and teaching production-quality software tools to study our microbial world. </span>
 </Fragment>
 </Hero>
 
-<Stats
+<HeroText title="Discover our <span class='text-primary font-bold'> published work</span>:" />
+
+ <Stats
     stats={[
-        { title: 'Citations', amount: '50K+' },
-        { title: 'Patent Applications', amount: '2K+' },
-        { title: 'Clinical Trials', amount: '50+' },
-    ]}
+      { title: 'Publications', amount: '130+' },
+      { title: 'Citations', amount: '150K+' },
+      { title: 'Collaborator Institutions', amount: '190+' },
+      { title: 'Open Access', amount: '82.8%' }]}
 />
+
+<Hero subtitleClass="-mb-20 -mt-20">
+    <Fragment slot="subtitle">
+        <span class="font-semibold"> Our publications can be found on <span class="text-primary font-bold"> [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=%22Caporaso+JG%22%5BAuthor%5D&sort=date)</span> or <span class="text-primary font-bold">[Google Scholar](https://scholar.google.com/citations?hl=en&user=8wv9sLkAAAAJ)</span>. We additionally publish pre-prints on <span class="text-primary font-bold">[arXiv](https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term="j.+gregory+caporaso"&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=show&size=50&order=-announced_date_first)</span>. </span>
+    </Fragment>
+</Hero>
 
 <Features
     id="features"
     title="Focus Areas"
-    subtitle="We are a bioinformatics software engineering lab with a track record of..."
 >
-    <FeatureItem title="The QIIME2 Software Project" icon="tabler:tournament">
-        A open-source software platform for microbioime analysis with integrated provenance tracking and a variety of
-        interfaces.
+    <FeatureItem title="Research Software Engineering" icon="tabler:tournament">
+        The QIIME 2 project, led by the Caporaso Lab, is the most widely cited single platform for microbiome data science and it's designed for accessibility, reliability, and innovation.
+        Learn more and get started, all for free, at https://qiime2.org.
     </FeatureItem>
 
-    <FeatureItem title="Diverse Research Experience" icon="tabler:microscope">
-        Groundbreaking publications across the fields of cancer prevention & treatment, environmental sustainability, and
-        scientific computing.
+    <FeatureItem title="Microbiome Research" icon="tabler:microscope">
+        Our team has led groundbreaking work in studies of the human microbiome, environmental microbiomes, and connections between the two.
+        [See our projects to learn more.](./projects)
     </FeatureItem>
 
     <FeatureItem title="Bioinformatics Education" icon="tabler:dna-2">
-        We are passionate about educating a diverse range of people in computational biology by maintaining a community
-        forum and hosting workshops around the world.
+        We are passionate about improving science by helping bioinformatics users and developers from all backgrounds improve their computational skills.
+        Ready to level-up your team's bioinformatics?
+        [Reach out to organize a training event today!](./professional-services)
     </FeatureItem>
 
-    <FeatureItem title="Biological Data Analysis Expertise" icon="tabler:chart-histogram">
-        By developing pipelines for tutorials used by students and experts alike and designing parallel software to make
-        optimal use of supercomputers, we know what it takes to perform serious scientific computing.
+    <FeatureItem title="Automating Bioinformatics" icon="tabler:chart-histogram">
+        We have automated workflows for diverse biological data science applications.
+        Frustrated with tools that require too much of your time, are too slow, or only work part of the time?
+        [Let us help!](./professional-services)
     </FeatureItem>
 </Features>
 
-<Features2 title="Connect With Us" subtitle="We're excited to engage with you!" columns={3}>
-    <LogoFeatureItem title="YouTube" image={youtubeIcon.src} href="https://www.youtube.com/qiime2">
-        Our archive for comprehensive data science workshops, in-depth tutorials, and complete courses.
+<Features2 title="Free Resources" subtitle="Use our educational and other resources to advance your skills." columns={3}>
+    <LogoFeatureItem title="YouTube" image={youtubeIcon.src}  darkImage={youtubeIcon.src} href="https://www.youtube.com/qiime2">
+    Find QIIME 2 and other data science videos and full courses on our YouTube channel.
     </LogoFeatureItem>
-    <LogoFeatureItem title="GitHub" image={githubIcon.src} href="https://www.github.com/qiime2">
-        We are open source software developers. Find us on github and check out our work.
+    <LogoFeatureItem title="GitHub" image={githubIcon.src} darkImage={githubIconDark.src} href="https://www.github.com/qiime2">
+    Our software tools are open source and free for all use.
+    Find them in the QIIME 2 and Caporaso Lab organizations on GitHub.
     </LogoFeatureItem>
-    <LogoFeatureItem title="QIIME2 Forum" image={q2Icon.src} href="https://forum.qiime2.org">
-        This platform serves as a free resource for discussions, troubleshooting, and collaboration. Users are encouraged
-        to engage and share their insights.
+    <LogoFeatureItem title="QIIME 2 Library" image={q2Icon.src} darkImage={q2IconDark.src} href="https://library.qiime2.org">
+    Learn how to install and use our software, and discover plugins and documentation produced by the QIIME 2 community - all on the QIIME 2 Library.
+    </LogoFeatureItem>
+    <LogoFeatureItem title="QIIME 2 Forum" image={q2Icon.src} darkImage={q2IconDark.src} href="https://forum.qiime2.org">
+    The QIIME 2 Forum is a free technical support and discussion site, and houses nearly 10 years of discussion about QIIME 2 and microbiome research methods.
+    Get involved to connect with others, share your work, and advance your research.
+    </LogoFeatureItem>
+    <LogoFeatureItem title="Free online books" image={booksIcon.src} darkImage={booksIcon.src}>
+    Our team has published three books available for learning, oriented toward aspiring bioinformatics methods developers, bioinformatics software developers, and users of bioinformatics tools. Find them here: <span class="text-blue-800 dark:text-blue-600 font-bold">[An Introduction to Applied Bioinformatics](https://readIAB.org)</span>, <span class="text-blue-800 dark:text-blue-600 font-bold">[Developing with QIIME 2](https://develop.qiime2.org)</span>, and <span class="text-blue-800 dark:text-blue-600 font-bold">[*Using QIIME 2*](https://use.qiime2.org) </span>
     </LogoFeatureItem>
 </Features2>

@@ -15,8 +15,8 @@ export const headerData = {
       href: getPermalink('/jobs'),
     },
     {
-      text: 'Publications',
-      href: getPermalink('/publications'),
+      text: 'Projects',
+      href: getPermalink('/projects'),
     },
     {
       text: 'Professional Services',
@@ -32,6 +32,8 @@ export const footerData = {
     { ariaLabel: 'Bluesky', icon: 'tabler:brand-bluesky', href: 'https://bsky.app/profile/qiime2.org' },
   ],
   footNote: `
-    Original template by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · Maintained by the Caporaso Lab · All rights reserved.
+    Original template by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · Maintained by the Caporaso Lab · © 2025 Caporaso Lab · All rights reserved.
+
+
   `,
 };
