@@ -3,12 +3,10 @@ layout: ~/layouts/PageLayout.astro
 title: 'Projects'
 ---
 
-import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
+import FeatureItem from '~/components/widgets/FeatureItem.astro';
 
 <HeroText
     id="features"
@@ -24,3 +22,24 @@ import Features from '~/components/widgets/Features.astro';
         { title: 'QIIME 2 Forum Users', amount: '8000+' },
     ]}
 />
+
+<HeroText
+    id="features"
+    title="<span class='text-primary'>Composting Research That Matters</span>   Human Excrement Composting (HEC)"
+    subtitle="Part of our lab’s work focuses on something you may not think about every day—human excrement composting (HEC). Globally, sanitation remains a major challenge: as of 2024, 2.2 billion people lacked safely managed drinking water, 3.4 billion lacked safely managed sanitation, and 1.7 billion lacked basic hygiene services at home. Composting toilets use little to no water, can be installed where infrastructure is absent or failing, and turn a waste problem into a nutrient rich resource!"
+/>
+<Features
+id="features"
+title="Checkout our Research"
+columns={3}
+>
+    <FeatureItem>
+        <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-024-01894-x">Microbiome multi-omics can accelerate human excrement composting research</a>
+    </FeatureItem>
+    <FeatureItem>
+        <a href="https://academic.oup.com/ismej/article/18/1/wrae228/7888797">Microbiome science of human excrement composting</a>
+    </FeatureItem>
+    <FeatureItem>
+        <a href="https://academic.oup.com/ismecommun/article/5/1/ycaf089/8152717">Upcycling human excrement: the gut microbiome to soil microbiome axis</a>
+    </FeatureItem>
+</Features>
